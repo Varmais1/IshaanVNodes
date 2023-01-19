@@ -14,6 +14,8 @@ class Node {
   //constructors
   Node();
   Node(Student* nstudent, Node* nnext);
+  //destructor
+  ~Node();
   //getters and setters
   Student* getStudent();
   Node* getNext();
