@@ -12,9 +12,9 @@ Node::Node() {
   next = NULL;
 }
 
-Node::Node(Student* nstudent, Node* nnext) {
+Node::Node(Student* nstudent) {
   student = nstudent;
-  next = nnext;
+  next = NULL;
 }
 
 //gets the student in the node
@@ -30,4 +30,8 @@ Node* Node::getNext() {
 //sets the next node to the node you want
 void Node::setNext(Node* nnext) {
   next = nnext;
+}
+
+Node::~Node() {
+  
 }
