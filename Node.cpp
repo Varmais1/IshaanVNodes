@@ -33,5 +33,5 @@ void Node::setNext(Node* nnext) {
 }
 
 Node::~Node() {
-  
+  delete[] student;
 }
